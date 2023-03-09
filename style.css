@@ -21,39 +21,24 @@
 body {
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
+
 .container {
   position: relative;
   min-height: 100vh;
-  width: 100%;
   background-color: var(--dark-cyan);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
-}
-.top-bg {
-  position: absolute;
-  transform: translate(-35% -55%);
-  left: -100px;
-  background-image: url("./images/bg-pattern-top.svg");
-  height: 978px;
-  width: 978px;
-  background-repeat: no-repeat;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: 0 -30rem, 55rem 30rem;
+  background-repeat: no-repeat, no-repeat;
 }
 
-.bottom-bg {
-  position: absolute;
-  top: 500px;
-  left: 800px;
-  background-image: url("./images/bg-pattern-bottom.svg");
-  height: 978px;
-  width: 978px;
-  background-repeat: no-repeat;
-}
 .wrapper {
   position: relative;
   background-color: white;
